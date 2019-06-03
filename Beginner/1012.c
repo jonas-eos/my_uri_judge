@@ -26,11 +26,11 @@ int main( ) {
 
     fscanf( stdin, "%lf\n%lf\n%lf", &a, &b, &c);
 
-    fprintf( stdout, "TRIANGULO %.3f\n", (double) TRIANGLE_AREA( a, c ));
-    fprintf( stdout, "CIRCULO %.3f\n", (double) CIRCLE_AREA( c ));
-    fprintf( stdout, "TRAPEZIO %.3f\n", (double) TRAPEZIUM_AREA( a, b, c ));
-    fprintf( stdout, "QUADRADO %.3f\n", (double) SQUARE_AREA( b ));
-    fprintf( stdout, "RETANGULO %.3f\n", (double) RECTANGLE_AREA( a, b ));
+    fprintf( stdout, "TRIANGULO: %.3f\n", (double) TRIANGLE_AREA( a, c ));
+    fprintf( stdout, "CIRCULO: %.3f\n", (double) CIRCLE_AREA( c ));
+    fprintf( stdout, "TRAPEZIO: %.3f\n", (double) TRAPEZIUM_AREA( a, b, c ));
+    fprintf( stdout, "QUADRADO: %.3f\n", (double) SQUARE_AREA( b ));
+    fprintf( stdout, "RETANGULO: %.3f\n", (double) RECTANGLE_AREA( a, b ));
 
     return 0;
 
