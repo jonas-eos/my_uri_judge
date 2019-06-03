@@ -54,8 +54,9 @@ setProductInformation( prodReg *product ) {
     int idBuffer;
     int amountBuffer;
     double unitPriceBuffer;
+    int index;
 
-    for(int index = FIRST_INDEX; index < MAX_PRODUCT; index++) {
+    for(index = FIRST_INDEX; index < MAX_PRODUCT; index++) {
 
         if (fscanf(stdin, "%i\n%i\n%lf", &idBuffer, &amountBuffer, &unitPriceBuffer) == 3) {
 
@@ -73,8 +74,9 @@ double
 calcTotalToPay(prodReg* product) {
 
     double result = 0;
+    int index;
 
-    for(int index = FIRST_INDEX; index < MAX_PRODUCT; index++) {
+    for(index = FIRST_INDEX; index < MAX_PRODUCT; index++) {
 
         result += CALC_PRODUCT_PRICE(product[index].amount, product[index].unitPrice);
 
