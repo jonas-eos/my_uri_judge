@@ -14,8 +14,8 @@ typedef struct person {
     
     int id;
     int workedHourInMonth;
-    float amountReceivedPerHour;
-    float salary;
+    double amountReceivedPerHour;
+    double salary;
 
 } person;
 
@@ -23,11 +23,11 @@ int main( ) {
 
     person employee;
 
-    fscanf( stdin, "%i %i %f", &employee.id, &employee.workedHourInMonth, 
+    fscanf( stdin, "%i %i %lf", &employee.id, &employee.workedHourInMonth, 
         &employee.amountReceivedPerHour);
 
-    employee.salary = SALARY_CALCULATOR(employee.workedHourInMonth, 
-        employee.amountReceivedPerHour);
+    employee.salary = (double) SALARY_CALCULATOR( (double) employee.workedHourInMonth, 
+        (double) employee.amountReceivedPerHour);
 
     fprintf( stdout, "NUMBER = %i\n", employee.id );
     fprintf( stdout, "SALARY = U$ %.2f\n", employee.salary);
