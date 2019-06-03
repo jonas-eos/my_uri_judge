@@ -42,7 +42,6 @@ int main( ) {
         if ((studanteGradeB >= MIN_GRADE) && (studanteGradeB <= MAX_GRADE)) {
            
            average = (float) TOTAL_SUM((float) studanteGradeA, (float) studanteGradeB);
-           printf("%f\n", average);
            average = (float) CALC_AVERAGE((float) average);
 
         } else return 1;
